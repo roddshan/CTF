@@ -19,6 +19,49 @@ Commands
         
 Changing the permission/groups of file
 
-        chown           chown new_user:new_group filename
+        chown                   chown new_user:new_group filename
         
         
+        chmod                   chmod <permisson> file
+                                
+                                Digit	Meaning
+                                1	That file can be executed
+                                2	That file can be written to
+                                3	That file can be executed and written to
+                                4	That file can be read
+                                5	That file can be read and executed
+                                6	That file can be written to and read
+                                7	That file can be read, written to, and executed
+
+                                Command:	Meaning
+                                chmod 341 file	
+                                                The file can be executed and written to by the user that owns the file
+
+                                                The file can be read by the group that owns the file
+
+                                                The file can be executed by everyone else.
+
+                                chmod 777 file	
+                                                The file can be read, written to, and executed by the user that owns the file
+
+                                                The file can be read, written to, and executed by the group that owns the file
+
+                                                The file can be read, written to, and executed by everyone else
+
+
+
+                                chmod 455	
+                                                The file can be read by the user that owns the file
+
+                                                The file can be read and executed by the group that owns the file
+
+                                                The file can be read to and executed by everyone else
+                                                
+        ln
+                linking one file to another             ln file1 file2                  -s flag used to show linking
+                        here file1 is linked to file2 means whatever change we do to file1, it will also be done in file2
+                        
+        find
+                find /tmp dir -user           to list every file owned by a specific user
+                find /tmp dir -group
+                
