@@ -1,0 +1,24 @@
+SSH
+        ssh user@ip
+       
+Commands
+        && Run two operations one after another                                                 cat abc && ls
+        
+        &  Run two operators but second one does not waits for first to finish                  cat abc & ls
+        
+        | Output of first commant is input of secind                                            cat psswd.txt | grep root
+        
+        $ the environment variables usually starts with $env_variable                           echo $USER
+        
+        ;  does not require first command to run sucessfully                                    djjcknj; ls
+        
+        > output to a file                                                                      echo hello > file.txt
+        
+        >> output to a file but with append                                                     echo hello >> file.txt
+        
+        
+Changing the permission/groups of file
+
+        chown           chown new_user:new_group filename
+        
+        
