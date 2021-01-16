@@ -1,0 +1,21 @@
+Image Creator
+
+      FTK Imager - Link
+      Redline - Link *Requires registration but Redline has a very nice GUI
+      DumpIt.exe
+      win32dd.exe / win64dd.exe - *Has fantastic psexec support, great for IT departments if your EDR solution doesn't support this
+      
+      -----------------------------------------------------------
+      
+Volatility
+      volatility -f MEMORY_FILE.raw imageinfo
+      volatility -f MEMORY_FILE.raw --profile=PROFILE pslist
+      volatility -f MEMORY_FILE.raw --profile=PROFILE netscan
+      volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D <Destination Directory usually /tmp>
+      volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+      
+      ------------------------------------------------------------
+      
+Malware Analysis
+      VirusTotal - https://www.virustotal.com/gui/home/upload
+      Hybrid Analysis - https://www.hybrid-analysis.com/
